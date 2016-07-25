@@ -1,0 +1,25 @@
+{
+  "title": "My CrossWord 1",
+  "description": "Haz tu propio crucigrama introduciendo las palabras y las pistas",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Jose Manuel Riballo Moreno",
+  "license": "cc-by-sa",
+  "machineName": "H5P.MyCrossWord1",
+  "preloadedCss": [
+	{"path": "css/mycrossword.css"}
+  ],
+  "preloadedJs": [
+    {
+	  "path": "js/mycrossword.js"
+	},
+	{
+	  "path": "js/crossword.js"
+	},
+	{
+	  "path": "js/word.js"
+	}
+  ]
+}
