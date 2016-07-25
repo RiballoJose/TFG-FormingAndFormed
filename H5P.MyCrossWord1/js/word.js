@@ -1,18 +1,26 @@
-(function (MyCrossword1, EventDispatcher, $) {
+(function (MyCrossWord1, EventDispatcher, $) {
 	
-	MyCrossword1.Word = function (parameters, id) {
+	MyCrossWord1.Word = function (parameters, id) {
 		var self = this;
 		
 		EventDispatcher.call(self);
-		
-		alert("En constructor de word");
-		
+				
 		var word = parameters.word_text;
 		var clue = parameters.clue;
+		var length = word.length;
 		
-		alert(word+" con clue "+clue);
+		self.getWord = function () {
+			return word;
+		};
+		self.getClue = function () {
+			return clue;
+		};
+		self.getLength = function () {
+			return length;
+		}
 	}
 	
-	MyCrossword1.Word.prototype = Object.create(EventDispatcher.prototype);
-	MyCrossword1.Word.prototype.constructor = MyCrossword1.Word;
-}
+	MyCrossWord1.Word.prototype = Object.create(EventDispatcher.prototype);
+	MyCrossWord1.Word.prototype.constructor = MyCrossWord1.Word;
+	
+})(H5P.MyCrossWord1, H5P.EventDispatcher, H5P.jQuery);

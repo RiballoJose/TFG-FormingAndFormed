@@ -20,6 +20,9 @@
 	},
 	{
 	  "path": "js/word.js"
+	},
+	{
+	  "path": "js/match.js"
 	}
   ]
 }
